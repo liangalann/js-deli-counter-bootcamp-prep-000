@@ -16,8 +16,9 @@ function currentLine(katzDeliLine) {
     if(!katzDeliLine.length) {
     return "The line is currently empty."
   }
+  var temp = [];
   for (var i = 0; i < katzDeliLine.length; i++) {
-    var temp = katzDeliLine[i]
+    temp.push(i+1 + ". " + katzDeliLine[i]);
+}
     console.log("I am currently" + katzDeliLine[i])
 }
-currentline(Ada,Grace)
